@@ -66,7 +66,7 @@ st.pydeck_chart(pdk.Deck(
      ],
 ))
 
-st.markdown('The red dots show the location of deaths with a size reflecting the numbers of deaths, and the blue dots show the location of water pums.')
+st.markdown('The red dots show the locations of deaths with a size reflecting the numbers of deaths, and the blue dots show the locations of water pums.')
 
 image = Image.open('Snow-cholera-map-1.jpg')
 
