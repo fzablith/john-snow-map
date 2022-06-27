@@ -26,7 +26,7 @@ df.drop(columns=['geometry'], inplace = True)
 st.header('John Snow\'s 1854 Cholera Deaths Map in London')
 st.subheader('This is a recreation of Snow\'s famous map that helped identifying the source of cholera oubreak in London')
 
-#create a slider  to filter the number of deaths
+#create a slider to filter the number of deaths
 death_to_filter = st.slider('Number of Deaths', 0, 15, 2)  # min: 0 death, max: 15 deaths, default: 7 deaths
 filtered_df = df[df['count'] >= death_to_filter]
 st.subheader(f'Map of more than {death_to_filter} deaths')
